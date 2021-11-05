@@ -42,6 +42,7 @@ a {
     color: black;
     font-size:2.5rem;	
 }	
+
 a:hover {	
     font-weight: bold;	
 }	
@@ -134,3 +135,49 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+
+
+/*Mobile view -500px*/
+
+
+@media(max-width:500px){
+    header nav a{
+        justify-content: space-between;
+    }
+    nav {
+        width: 50%;
+    }
+    a{
+        font-size: 2rem;
+    }
+    .title-container div {
+        width: 100%;
+    }
+    .title-container hr {
+        width:100%;
+    }
+    button{
+        font-size: 2rem;
+        border-radius: 6px;
+    }
+    .artists-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .artist{
+        width:100%;
+    }
+     
+     p, .name, .bio{
+        text-align: justify;
+    }
+    a:active{
+        font-weight: bold;
+    }
+}
+
+
+
+
