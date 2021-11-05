@@ -254,7 +254,7 @@ function get20s(array) {
     const yearOfDeathString = yearsBetweenStrings[1];
     const yearOfBirthNumber = parseInt(yearOfBirthString, 10);
     const yearOfDeathNumber = parseInt(yearOfDeathString, 10);
-    console.log(`yearOfBirthNumber`, yearOfBirthNumber, `yearOfDeathNumber`, yearOfDeathNumber)
+    //console.log(`yearOfBirthNumber`, yearOfBirthNumber, `yearOfDeathNumber`, yearOfDeathNumber)
       if (yearOfBirthNumber >1900 && yearOfDeathNumber < 2000){
         nameOfArtistBornIn20.push(artist.name);
       }
