@@ -233,7 +233,7 @@ function getArtistByIndex( array,number ) {
   return `the artist at index ${array[number].id} is ${array[number].name}`;
 }
 
-console.log(getArtistByIndex(artists,0));
+// console.log(getArtistByIndex(artists,0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -245,11 +245,24 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  
-}
+  const nameOfArtistBornIn20 =[];
+  for(let i= 0; i<array.length; i++){
+    const artist = array[i];
+    const yearsBetweenStrings = artist.years.split(' - ');
+    //console.log('yearsBetween', yearsBetweenStrings)
+    const yearOfBirthString = yearsBetweenStrings[0];
+    const yearOfDeathString = yearsBetweenStrings[1];
+    const yearOfBirthNumber = parseInt(yearOfBirthString, 10);
+    const yearOfDeathNumber = parseInt(yearOfDeathString, 10);
+    console.log(`yearOfBirthNumber`, yearOfBirthNumber, `yearOfDeathNumber`, yearOfDeathNumber)
+      if (yearOfBirthNumber >1900 && yearOfDeathNumber < 2000){
+        nameOfArtistBornIn20.push(artist.name);
+      }
+    }
+    return nameOfArtistBornIn20;
+  }
 
-
-
+  console.log(get20s(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
 1. Receive an array
@@ -264,7 +277,7 @@ function removeArtist(array,i) {
   return array.length;
 }
 
-console.log(removeArtist(artists,0));
+// console.log(removeArtist(artists,0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -296,7 +309,7 @@ array.push(newObject)
 return array;
 }
 
-console.log(addArtist(artists))
+// console.log(addArtist(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
