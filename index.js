@@ -245,17 +245,10 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  const nameOfArtistsBornIn20s=[];
-
-for (let i =0; i <array.length; i++){
-  if(array[i].years ){
-    nameOfArtistsBornIn20s.push(array[i].name);
-  }
-}
-return nameOfArtistsBornIn20s;
+  
 }
 
-console.log(get20s(artists));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -289,10 +282,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+const newObject ={
+  "id": 20,
+  "name": "Berenika Ahmetaj", 
+  "years": "1995-2021",
+  "genre": "Web Design", 
+  "nationality": "Albanian",
+  "bio": "https://i.picsum.photos/id/265/200/300.jpg?hmac=NX0ut-ylHFyYKa4TxhZFNElh-h6RcVV7P4PNPgeBxKk"
+
+}
+array.push(newObject)
+return array;
 }
 
+console.log(addArtist(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -305,8 +309,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array) {
   const moreThan100=[];
   for(let i =0; i < array.length; i++){
-    if(array[i].pantings > 100){
-      moreThan100.push(array[i].name)
+    const artist = array[i];
+    if(artist.paintings > 100){
+      moreThan100.push(artist.name)
     }
   }
   return moreThan100;

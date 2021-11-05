@@ -232,7 +232,7 @@ describe('removeArtist', ()=>{
     })
 });
 
-describe('addArtist', ()=>{
+describe.only('addArtist', ()=>{
     it('addArtist returns array with added object', ()=>{
         expect(functions.addArtist(artists)).toEqual(artists);
         expect(functions.addArtist(artists)).toHaveLength(++artists.length);
