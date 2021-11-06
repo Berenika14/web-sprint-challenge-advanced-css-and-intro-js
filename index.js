@@ -218,8 +218,8 @@ console.log(artists[2].bio)
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
- artists[9].name = 'Vincent Van Gogh';
- console.log(artists[9].name);
+ //const ninth = { ...artists[9], name : 'Vincent Van Gogh' };
+ //console.log('here we are', ninth.name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
