@@ -39,6 +39,7 @@ In programming we use variable to hold or store values . Just like in Math that 
 Function is a block of code with the purpose to perform a specif task. it can be reusable
 
 5. How do you access a key inside of an object inside of an array?
+by accessing the index of the array that holds that object and the key(name).
 array[i].key.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
